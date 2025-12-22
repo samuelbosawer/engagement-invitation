@@ -1,25 +1,102 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="utf-8">
     <title>Dashboard Undangan Sam & Fanny</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle:wght@400;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle:wght@400;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="apple-touch-icon" href="img/logo.png">
+
+
+    <meta name="description"
+        content="Tanpa mengurangi rasa hormat, kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara Peminangan Sam & Fanny. Simak informasi lengkap acara melalui undangan digital ini.">
+    <meta name="keywords" content="Undangan Peminangan, Sam dan Fanny, Engagement Invitation">
+    <meta name="author" content="SB">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sam-fanny.projectbos.web.id/">
+    <meta property="og:title" content="Sam & Fanny - Undangan Peminangan">
+    <meta property="og:description"
+        content="Kami memohon doa restu serta kehadiran Anda di momen bahagia kami. Klik untuk melihat detail acara.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sam-fanny.projectbos.web.id/">
+    <meta property="twitter:title" content="Sam & Fanny - Undangan Peminangan">
+    <meta property="twitter:description" content="Kami memohon doa restu serta kehadiran Anda di momen bahagia kami.">
+    <meta property="twitter:image" content="img/logo.png">
     <style>
-        body { font-family: 'Montserrat', sans-serif; background: #f8f5f2; color: #333; padding-top: 80px; }
-        h1, h2, h3 { font-family: 'BBH Sans Bogle', sans-serif; }
-        .header { background: linear-gradient(135deg, #d4a373, #efd8b8); color: white; padding: 40px 0; text-align: center; }
-        .card { border: none; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
-        .message-item { background: white; padding: 20px; margin-bottom: 15px; border-radius: 12px; border-left: 5px solid #d4a373; }
-        .text-gold { color: #d4a373; }
-        .btn-gold { background: #d4a373; border: none; }
-        .btn-gold:hover { background: #c6945e; color: white; }
-        .copy-btn { cursor: pointer; }
-        pre { background: #f8f9fa; padding: 15px; border-radius: 10px; white-space: pre-wrap; word-wrap: break-word; }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #f8f5f2;
+            color: #333;
+            padding-top: 80px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'BBH Sans Bogle', sans-serif;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #d4a373, #efd8b8);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .message-item {
+            background: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 12px;
+            border-left: 5px solid #d4a373;
+        }
+
+        .text-gold {
+            color: #d4a373;
+        }
+
+        .btn-gold {
+            background: #d4a373;
+            border: none;
+        }
+
+        .btn-gold:hover {
+            background: #c6945e;
+            color: white;
+        }
+
+        .copy-btn {
+            cursor: pointer;
+        }
+
+        pre {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
     </style>
+
+
 </head>
+
 <body>
     <div class="header">
         <h1 class="display-4">Dashboard Undangan</h1>
@@ -34,7 +111,8 @@
                     <h3 class="text-gold mb-4"><i class="fas fa-link me-2"></i>Buat Link Undangan Tamu</h3>
                     <div class="mb-3">
                         <label class="form-label fw-medium">Nama Tamu Lengkap (dengan gelar)</label>
-                        <input type="text" id="guestNameInput" class="form-control form-control-lg" placeholder="Contoh: Bro Samuel Bosawer S.Kom">
+                        <input type="text" id="guestNameInput" class="form-control form-control-lg"
+                            placeholder="Contoh: Bro Samuel Bosawer S.Kom">
                     </div>
                     <button class="btn btn-gold btn-lg w-100 mb-3" onclick="generateLink()">
                         <i class="fas fa-magic me-2"></i>Generate Link
@@ -51,31 +129,36 @@
 
                 <!-- Template Pesan WhatsApp (akan muncul setelah generate) -->
                 <div id="whatsappTemplates" class="card p-4 mt-4 d-none">
-                    <h4 class="text-gold mb-3"><i class="fab fa-whatsapp me-2"></i>Template Pesan WhatsApp Siap Kirim</h4>
+                    <h4 class="text-gold mb-3"><i class="fab fa-whatsapp me-2"></i>Template Pesan WhatsApp Siap Kirim
+                    </h4>
                     <p class="text-muted small">Pilih salah satu, lalu salin dan kirim ke tamu.</p>
 
                     <div class="mb-4">
                         <h6>1. Versi Resmi & Hangat</h6>
                         <pre id="template1" class="border p-3 bg-white"></pre>
-                        <button class="btn btn-sm btn-outline-success mt-1" onclick="copyTemplate('template1')">Salin Teks Ini</button>
+                        <button class="btn btn-sm btn-outline-success mt-1" onclick="copyTemplate('template1')">Salin
+                            Teks Ini</button>
                     </div>
 
                     <div class="mb-4">
                         <h6>2. Versi Panjang Penuh Syukur</h6>
                         <pre id="template2" class="border p-3 bg-white"></pre>
-                        <button class="btn btn-sm btn-outline-success mt-1" onclick="copyTemplate('template2')">Salin Teks Ini</button>
+                        <button class="btn btn-sm btn-outline-success mt-1" onclick="copyTemplate('template2')">Salin
+                            Teks Ini</button>
                     </div>
 
                     <div class="mb-4">
                         <h6>3. Versi Santai (untuk teman/seumuran)</h6>
                         <pre id="template3" class="border p-3 bg-white"></pre>
-                        <button class="btn btn-sm btn-outline-success mt-1" onclick="copyTemplate('template3')">Salin Teks Ini</button>
+                        <button class="btn btn-sm btn-outline-success mt-1" onclick="copyTemplate('template3')">Salin
+                            Teks Ini</button>
                     </div>
 
                     <div class="mb-4">
                         <h6>4. Versi untuk Pendeta/Gereja</h6>
                         <pre id="template4" class="border p-3 bg-white"></pre>
-                        <button class="btn btn-sm btn-outline-success mt-1" onclick="copyTemplate('template4')">Salin Teks Ini</button>
+                        <button class="btn btn-sm btn-outline-success mt-1" onclick="copyTemplate('template4')">Salin
+                            Teks Ini</button>
                     </div>
                 </div>
             </div>
@@ -112,15 +195,15 @@
             }
             const encodedName = encodeURIComponent(nameInput);
             currentLink = `${baseUrl}?to=${encodedName}`;
-            
+
             document.getElementById('generatedLink').value = currentLink;
             document.getElementById('linkResult').classList.remove('d-none');
             document.getElementById('whatsappTemplates').classList.remove('d-none');
 
             // Update semua template dengan link & nama
             const guestName = nameInput;
-            document.getElementById('template1').textContent = 
-`Shalom ${guestName},
+            document.getElementById('template1').textContent =
+                `Shalom ${guestName},
 
 Dengan sukacita dan penuh ucapan syukur kepada Tuhan Yesus Kristus, kami mengundang Bapak/Ibu/Saudara/i untuk hadir memberikan doa restu pada acara peminangan putra-putri kami:
 
@@ -141,8 +224,8 @@ Terima kasih dan Tuhan memberkati.
 Hormat kami,  
 Keluarga Samuel & Fanny`;
 
-            document.getElementById('template2').textContent = 
-`Shalom dalam kasih Tuhan Yesus Kristus, ${guestName} yang dikasihi Tuhan,
+            document.getElementById('template2').textContent =
+                `Shalom dalam kasih Tuhan Yesus Kristus, ${guestName} yang dikasihi Tuhan,
 
 Dengan hati penuh ucapan syukur kepada Allah Bapa, kami mengundang Bapak/Ibu/Saudara/i untuk turut bersukacita pada acara peminangan:
 
@@ -164,8 +247,8 @@ Terima kasih banyak dan Tuhan Yesus memberkati selalu.
 Salam kasih,  
 Keluarga Samuel & Fanny`;
 
-            document.getElementById('template3').textContent = 
-`Shalom ${guestName}! 😊
+            document.getElementById('template3').textContent =
+                `Shalom ${guestName}! 😊
 
 Kabar gembira! Sam & Fanny akan mengadakan acara peminangan 🎉
 
@@ -182,8 +265,8 @@ Datangnya jadi berkat banget! Terima kasih dan Tuhan Yesus memberkati 🙏
 
 Sam & Fanny`;
 
-            document.getElementById('template4').textContent = 
-`Shalom dalam nama Tuhan Yesus Kristus,
+            document.getElementById('template4').textContent =
+                `Shalom dalam nama Tuhan Yesus Kristus,
 
 Yang terhormat Bapak/Ibu ${guestName} beserta keluarga,
 
@@ -251,4 +334,5 @@ Keluarga Samuel & Fanny`;
         loadMessages();
     </script>
 </body>
+
 </html>
