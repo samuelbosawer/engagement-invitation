@@ -1,0 +1,11 @@
+# Matikan fitur index folder agar lebih aman
+Options -Indexes
+
+# Aktifkan Rewrite Engine
+RewriteEngine On
+RewriteBase /
+
+# Jika file atau direktori tidak ditemukan, arahkan ke index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
