@@ -20,26 +20,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
     <!-- Lightbox -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="img/logo.png">
-    <link rel="apple-touch-icon" href="img/logo.png">
-
-
-    <meta name="description" content="Tanpa mengurangi rasa hormat, kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara Peminangan Sam & Fanny. Simak informasi lengkap acara melalui undangan digital ini.">
-<meta name="keywords" content="Undangan Peminangan, Sam dan Fanny, Engagement Invitation">
-<meta name="author" content="SB">
-
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://sam-fanny.projectbos.web.id/">
-<meta property="og:title" content="Sam & Fanny - Undangan Peminangan">
-<meta property="og:description" content="Kami memohon doa restu serta kehadiran Anda di momen bahagia kami. Klik untuk melihat detail acara.">
-<meta property="og:image" content="img/logo.png"> <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://sam-fanny.projectbos.web.id/">
-<meta property="twitter:title" content="Sam & Fanny - Undangan Peminangan">
-<meta property="twitter:description" content="Kami memohon doa restu serta kehadiran Anda di momen bahagia kami.">
-<meta property="twitter:image" content="img/logo.png">
-
-
-
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
@@ -237,22 +217,15 @@
             transform: rotate(-30deg);
             z-index: 1;
         }
-
-        .cursor-pointer {
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-
-        .cursor-pointer:hover {
-            transform: scale(1.05);
-        }
     </style>
 </head>
 
 <body>
     <!-- Music -->
     <audio id="bg-music" loop>
-        <source src="James_Arthur_-_Say_You_Wont_Let_Go_out.mp3" type="audio/mpeg">
+        <source
+            src="James_Arthur_-_Say_You_Wont_Let_Go_out.mp3"
+            type="audio/mpeg">
     </audio>
     <div class="music-btn animate__animated animate__pulse animate__infinite" onclick="toggleMusic()">
         <i id="music-icon" class="fas fa-volume-up fa-2x text-primary"></i>
@@ -289,31 +262,28 @@
             <img src="img/tamp-bg-1.png" class="decor-top-right" alt="decor">
             <img src="img/team-1-bg.png" class="decor-bottom-left" alt="decor">
             <img src="img/team-1-bg.png" class="decor-bottom-right" alt="decor">
-            <div class="container animate__animated animate__fadeInUp" style="position: relative; z-index: 2;">
-                <p class="text-uppercase text-muted text-center" style="letter-spacing: 5px; font-size: 0.9rem;">Dengan
-                    rahmat Tuhan Yang Maha Esa</p>
-                <h1 class="display-3 text-primary text-center my-5">Salam Sejahtera</h1>
-                <p class="lead col-lg-8 mx-auto text-center mb-2">Dengan penuh rasa syukur ke hadirat Allah SWT,</p>
-                <p class="lead col-lg-8 mx-auto text-center mb-5">kami mengundang Bapak/Ibu/Saudara/i untuk hadir dan
-                    memberikan doa restu<br>pada acara peminangan putra-putri kami.</p>
+            <div class="container animate__animated animate__fadeInUp">
+                <p class="text-uppercase text-muted" style="letter-spacing: 4px;">Dengan rahmat Tuhan Yang Maha Esa</p>
+                <h1 class="display-3 text-primary my-5">Salam Sejahtera</h1>
+                <p class="lead col-lg-8 mx-auto mb-5">Kami mengundang Bapak/Ibu/Saudara/i untuk memberikan doa restu
+                    pada acara peminangan putra-putri kami</p>
+                <p class="fs-5" id="guest-name">Kepada YTH. Bapak/Ibu/Saudara/i</p>
 
-                <p class="fs-4 text-center mb-5" id="guest-name">Kepada YTH. Bapak/Ibu/Saudara/i</p>
-
-                <!-- Nama Pasangan Tanpa Foto -->
-                <div class="row align-items-center justify-content-center mt-5">
-                    <div class="col-lg-4 text-end">
-                        <h2 class="display-4 text-primary mb-0" style="font-weight: 600;">Fanny Woisir</h2>
-                        <p class="text-muted text-end">Putri dari Bapak ... & Ibu ...</p>
+                <div class="row mt-5 align-items-center justify-content-center">
+                    <div class="col-lg-4 animate__animated animate__fadeInLeft">
+                        <img src="img/bride.jpg" class="img-fluid rounded-circle shadow mb-4"
+                            style="width: 300px; height: 300px; object-fit: cover;">
+                        <h3 class="text-primary">Fanny Woisir</h3>
+                        <p>Putri dari ...</p>
                     </div>
-
-                    <div
-                        class="col-lg-2 text-center animate__animated animate__heartBeat animate__infinite animate__delay-1s">
-                        <i class="fa fa-heart fa-4x text-primary opacity-75"></i>
+                    <div class="col-lg-1 animate__animated animate__heartBeat animate__infinite animate__delay-1s p-3">
+                        <i class="fa fa-heart fa-3x text-primary"></i>
                     </div>
-
-                    <div class="col-lg-4 text-start">
-                        <h2 class="display-4 text-primary mb-0" style="font-weight: 600;">Samuel Simbiak</h2>
-                        <p class="text-muted text-start">Putra dari Bapak ... & Ibu ...</p>
+                    <div class="col-lg-4 animate__animated animate__fadeInRight">
+                        <img src="img/Groom.jpg" class="img-fluid rounded-circle shadow mb-4"
+                            style="width: 300px; height: 300px; object-fit: cover;">
+                        <h3 class="text-primary">Samuel Simbiak</h3>
+                        <p>Putra dari ...</p>
                     </div>
                 </div>
             </div>
@@ -339,66 +309,26 @@
 
         <!-- Gallery -->
         <section id="gallery" class="position-relative section-decor">
-            <!-- Decorative corners (contoh menggunakan gambar gold floral dari rekomendasi) -->
-            <img src="https://static.vecteezy.com/system/resources/thumbnails/051/961/374/small_2x/elegant-gold-floral-decorative-corner-design-with-intricate-details-on-a-transparent-background-perfect-for-invitations-and-luxury-designs-png.png"
-                class="decor-top-left" alt="decor">
-            <img src="https://png.pngtree.com/png-vector/20241219/ourlarge/pngtree-creative-golden-flower-corner-on-transparent-background-png-image_14811432.png"
-                class="decor-top-right" alt="decor">
-            <img src="https://static.vecteezy.com/system/resources/thumbnails/060/590/829/small_2x/golden-ornate-floral-corner-frame-elegant-vintage-design-cut-out-transparent-png.png"
-                class="decor-bottom-left" alt="decor">
-            <img src="https://png.pngtree.com/png-vector/20250506/ourlarge/pngtree-vintage-elegant-frame-corner-border-golden-wedding-invitation-and-certificate-design-vector-png-image_16175006.png"
-                class="decor-bottom-right" alt="decor">
-
-            <div class="container animate__animated animate__fadeInUp" style="position: relative; z-index: 2;">
+           <img src="img/team-1-bg.png" class="decor-top-left" alt="decor">
+            <img src="img/tamp-bg-1.png" class="decor-top-right" alt="decor">
+            <img src="img/team-1-bg.png" class="decor-bottom-left" alt="decor">
+            <img src="img/team-1-bg.png" class="decor-bottom-right" alt="decor">
+            <div class="container animate__animated animate__fadeInUp">
                 <h1 class="display-3 text-center text-primary mb-5">Gallery</h1>
                 <div class="row g-4 justify-content-center">
-                    <!-- Thumbnail 1 -->
-                    <div class="col-md-6 col-lg-4">
-                        <img src="img/gallery-1.jpg" class="img-fluid rounded shadow cursor-pointer"
-                            data-bs-toggle="modal" data-bs-target="#galleryModal" data-img-index="0" alt="Gallery 1">
-                    </div>
-                    <!-- Thumbnail 2 -->
-                    <div class="col-md-6 col-lg-4">
-                        <img src="img/gallery-2.jpg" class="img-fluid rounded shadow cursor-pointer"
-                            data-bs-toggle="modal" data-bs-target="#galleryModal" data-img-index="1" alt="Gallery 2">
-                    </div>
-                    <!-- Thumbnail 3 -->
-                    <div class="col-md-6 col-lg-4">
-                        <img src="img/gallery-3.jpg" class="img-fluid rounded shadow cursor-pointer"
-                            data-bs-toggle="modal" data-bs-target="#galleryModal" data-img-index="2" alt="Gallery 3">
-                    </div>
-                    <!-- Tambahkan lebih banyak thumbnail sesuai kebutuhan -->
+                    <!-- Tambahkan gambar kamu -->
+                    <div class="col-md-6 col-lg-4"><a href="img/gallery-1.jpg" data-lightbox="gallery"><img
+                                src="img/gallery-1.jpg" class="img-fluid rounded shadow"></a></div>
+                    <div class="col-md-6 col-lg-4"><a href="img/gallery-2.jpg" data-lightbox="gallery"><img
+                                src="img/gallery-2.jpg" class="img-fluid rounded shadow"></a></div>
+                    <!-- Tambah lebih banyak -->
                 </div>
             </div>
         </section>
 
-        <!-- Modal Gallery -->
-        <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-xl modal-dialog-centered">
-                <div class="modal-content bg-transparent border-0">
-                    <div class="modal-body p-0 text-center position-relative">
-                        <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
-                            data-bs-dismiss="modal" aria-label="Close"></button>
-
-                        <img id="modalImage" src="" class="img-fluid rounded shadow" alt="Gallery Image">
-
-                        <!-- Navigasi Prev / Next -->
-                        <button class="btn btn-primary position-absolute top-50 start-0 translate-middle-y ms-3"
-                            id="prevBtn">
-                            <i class="fa fa-chevron-left fa-2x"></i>
-                        </button>
-                        <button class="btn btn-primary position-absolute top-50 end-0 translate-middle-y me-3"
-                            id="nextBtn">
-                            <i class="fa fa-chevron-right fa-2x"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!-- Ucapan & RSVP -->
         <section id="ucapan" class="section-decor">
-            <img src="img/team-1-bg.png" class="decor-top-left" alt="decor">
+         <img src="img/team-1-bg.png" class="decor-top-left" alt="decor">
             <img src="img/tamp-bg-1.png" class="decor-top-right" alt="decor">
             <img src="img/team-1-bg.png" class="decor-bottom-left" alt="decor">
             <img src="img/team-1-bg.png" class="decor-bottom-right" alt="decor">
@@ -503,47 +433,6 @@
             form.reset();
             loadMessages();
             alert('Terima kasih! Ucapan Anda telah tersimpan.');
-        });
-    </script>
-
-    <script>
-        // Daftar gambar gallery (urutan sesuai thumbnail)
-        const galleryImages = [
-            'img/gallery-1.jpg',
-            'img/gallery-2.jpg',
-            'img/gallery-3.jpg'
-            // Tambahkan path gambar lain di sini jika ada lebih banyak
-        ];
-
-        let currentIndex = 0;
-
-        // Buka modal & set gambar
-        document.querySelectorAll('[data-bs-target="#galleryModal"]').forEach(img => {
-            img.addEventListener('click', function () {
-                currentIndex = parseInt(this.getAttribute('data-img-index'));
-                document.getElementById('modalImage').src = galleryImages[currentIndex];
-            });
-        });
-
-        // Next
-        document.getElementById('nextBtn').addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % galleryImages.length;
-            document.getElementById('modalImage').src = galleryImages[currentIndex];
-        });
-
-        // Prev
-        document.getElementById('prevBtn').addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
-            document.getElementById('modalImage').src = galleryImages[currentIndex];
-        });
-
-        // Keyboard navigation
-        document.addEventListener('keydown', (e) => {
-            if (document.getElementById('galleryModal').classList.contains('show')) {
-                if (e.key === 'ArrowLeft') document.getElementById('prevBtn').click();
-                if (e.key === 'ArrowRight') document.getElementById('nextBtn').click();
-                if (e.key === 'Escape') new bootstrap.Modal(document.getElementById('galleryModal')).hide();
-            }
         });
     </script>
 </body>
