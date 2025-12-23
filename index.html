@@ -48,6 +48,55 @@
             overflow-x: hidden;
         }
 
+         /* Hilangkan overflow horizontal di seluruh halaman */
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Pastikan semua section dan container tidak melebihi layar */
+    section, .container, .container-fluid {
+        overflow-x: hidden;
+    }
+
+    /* Perbaiki decorative image agar tidak keluar layar di HP */
+    .decor-top-left,
+    .decor-top-right,
+    .decor-bottom-left,
+    .decor-bottom-right {
+        width: 120px !important;   /* Kecilkan di HP */
+        opacity: 0.4;
+    }
+
+    /* Khusus untuk mobile: sembunyikan atau kecilkan dekorasi agar tidak overflow */
+    @media (max-width: 768px) {
+        .decor-top-left,
+        .decor-top-right,
+        .decor-bottom-left,
+        .decor-bottom-right {
+            width: 80px !important;
+            opacity: 0.3;
+        }
+        
+        /* Jika masih overflow, bisa disembunyikan di HP saja */
+        /* .decor-top-right, .decor-bottom-left { display: none; } */
+    }
+
+    /* Floating menu lebih responsif di HP */
+    .floating-menu {
+        padding: 10px 15px;
+    }
+    .floating-menu a {
+        font-size: 0.8rem;
+    }
+    .floating-menu i {
+        font-size: 1.5rem;
+    }
+
+
+
         h1,
         h2,
         h3,
@@ -298,17 +347,17 @@
 
                 <!-- Nama Pasangan Tanpa Foto -->
                 <div class="row align-items-center justify-content-center mt-5">
-                    <div class="col-lg-4 ">
+                    <div class="col-lg-4 mt-3 ">
                         <h2 class="display-4 text-primary mb-0" style="font-weight: 600;">Fanny Woisir</h2>
                         <p class="text-muted ">Putri dari Bapak ... & Ibu ...</p>
                     </div>
 
                     <div
-                        class="col-lg-2 p-5 text-center animate__animated animate__heartBeat animate__infinite animate__delay-1s">
+                        class="col-lg-2 mt-3  text-center animate__animated animate__heartBeat animate__infinite animate__delay-1s">
                         <i class="fa fa-heart fa-4x text-primary opacity-75"></i>
                     </div>
 
-                    <div class="col-lg-4 ">
+                    <div class="col-lg-4 mt-3 ">
                         <h2 class="display-4 text-primary mb-0" style="font-weight: 600;">Samuel Simbiak</h2>
                         <p class="text-muted ">Putra dari Bapak ... & Ibu ...</p>
                     </div>
@@ -322,7 +371,7 @@
             <div class="container animate__animated animate__fadeInUp">
                 <h1 class="display-3 text-primary mb-5">Acara Peminangan</h1>
                 <div class="bg-white p-5 rounded shadow col-lg-6 mx-auto">
-                    <p class="fw-bold fs-2">Sabtu, 27 Desember 2025</p>
+                    <p class="fw-bold fs-3">Sabtu, 27 Desember 2025</p>
                     <p class="fs-3">Pukul 09:00 WIT</p>
                     <p class="fs-3">BTN Atas Tanah Hitam</p>
                     <p class="mt-4">Merupakan kehormatan bagi kami apabila Bapak/Ibu berkenan hadir</p>
